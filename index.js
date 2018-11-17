@@ -14,11 +14,10 @@ const summaryBody5 = `   high profile business to business products.`
 
 
 	var orgSkills = [`Product Management`,`Stakeholder Collaboration` ,`Internal Communications`,`Business Analytics`]
-	var langSkills = [`Javascript(ES6+)`,`CLI`,`Regex`,`SQL`]
-	var dataSkills = [`Regex`,  `MongoDB`,`GeoJSON`, `MySQL`]
-	var serverSkills = [`Node.js`,`Express`]
-	var frontendSkills = [`React & React Native`, `Vue`, `jQuery`, `Handlebars`, `Flexbox`,`JSX`]
-	var ideSkills = [`Xcode`,`Heroku`, `Git`]	
+	var langSkills = [`Javascript(ES6+)`,`CLI`,`SQL`]
+	var backendSkills = [`Node.js`,`Express`,`Regex`,  `MongoDB`,`GeoJSON`, `MySQL`]
+	var frontendSkills = [`React Native`, `ReactJS`, `Vue`, `jQuery`, `Handlebars`, `Flexbox`,`JSX`]
+	var ideSkills = [`Xcode`, `Sublime`, `Netbeans`, `MySQL Workbench`, `Postman`, `Heroku`, `Git`]	
 
 
 const pipe = ` | `
@@ -44,14 +43,30 @@ console.log(chalk.whiteBright(summaryBody4))
 console.log(chalk.whiteBright(summaryBody5))
 console.log(chalk.black(emptyLine))
 
-console.log(chalk.magentaBright("Organizational skills"))
+console.log(chalk.magentaBright("                Organizational skills"))
 for(let i = 0; i < orgSkills.length; i++) {
-	console.log(".   " +chalk.cyanBright(orgSkills[i]))
+	console.log(".             " +chalk.cyanBright(orgSkills[i]))
 }
-
-
-
-
+console.log(chalk.black(emptyLine))
+console.log(chalk.magentaBright("                Languages"))
+for(let i = 0; i < langSkills.length; i++) {
+	console.log(".             " +chalk.cyanBright(langSkills[i]))
+}
+console.log(chalk.black(emptyLine))
+console.log(chalk.magentaBright("                Front End"))
+for(let i = 0; i < frontendSkills.length; i++) {
+	console.log(".             " +chalk.cyanBright(frontendSkills[i]))
+}
+console.log(chalk.black(emptyLine))
+console.log(chalk.magentaBright("                Backend"))
+for(let i = 0; i < backendSkills.length; i++) {
+	console.log(".             " +chalk.cyanBright(backendSkills[i]))
+}
+console.log(chalk.black(emptyLine))
+console.log(chalk.magentaBright("                IDE"))
+for(let i = 0; i < ideSkills.length; i++) {
+	console.log(".             " +chalk.cyanBright(ideSkills[i]))
+}
 
 
 
